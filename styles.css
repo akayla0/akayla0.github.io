@@ -83,6 +83,22 @@ body::before {
     z-index: 1;
 }
 
+.layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.left-column {
+    flex: 0 0 320px;
+    max-width: 320px;
+}
+
+.right-column {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
 header {
     text-align: center;
     padding: 60px 20px;
@@ -225,11 +241,14 @@ p {
     line-height: 1.9;
 }
 
+
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .skill-tag {
@@ -241,6 +260,11 @@ p {
     box-shadow: 3px 3px 0px #ff8ac9;
     transition: all 0.1s ease;
     cursor: default;
+    display: inline-block;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    white-space: nowrap;
 }
 
 .skill-tag:hover {
@@ -330,7 +354,7 @@ p {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: #ffb6df;
+    background: #ffd7e6;
     position: relative;
     margin: 0 5px;
     transform: rotate(45deg);
@@ -342,7 +366,7 @@ p {
     position: absolute;
     width: 12px;
     height: 12px;
-    background: #ffb6df;
+    background: #ffd7e6;
 }
 
 .pixel-heart::before {
