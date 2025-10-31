@@ -86,13 +86,13 @@ document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
 
-// Custom cursor initialization after DOM is loaded
+
 document.addEventListener('DOMContentLoaded', () => {
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
     document.body.appendChild(cursor);
 
-    // Initial cursor position
+    
     cursor.style.opacity = '0';
     cursor.style.left = '-100px';
     cursor.style.top = '-100px';
