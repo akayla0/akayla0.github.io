@@ -154,6 +154,7 @@ h1 {
         8px 8px 0px rgba(255, 138, 201, 0.3);
     position: relative;
     font-size: 0.7em;
+    cursor: pointer;
 }
 
 .social-btn:hover {
