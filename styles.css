@@ -4,20 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
-}
-
-a, button, [role="button"] {
-    cursor: none;
-}
-
-@media (max-width: 768px) {
-    * {
-        cursor: auto !important;
-    }
-    .custom-cursor {
-        display: none;
-    }
 }
 
 body {
