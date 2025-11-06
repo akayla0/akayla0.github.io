@@ -232,7 +232,7 @@ p {
     margin-top: 20px;
     justify-content: flex-start;
     align-items: flex-start;
-    
+    cursor: default;
 }
 
 .skill-tag {
